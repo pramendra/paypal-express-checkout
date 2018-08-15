@@ -1,4 +1,4 @@
 // @flow
-import React from "react";
+import * as React from 'react';
 
 export default () => <h1>hello world</h1>;
