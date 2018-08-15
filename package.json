@@ -1,0 +1,8 @@
+{
+  "name": "paypal-express-checkout",
+  "version": "1.0.0",
+  "main": "server/main.js",
+  "license": "MIT",
+  "description": "paypal express checkout using braintree",
+  "author": "Pramendra Gupta <pramendra@gmail.com>"
+}
