@@ -7,10 +7,14 @@ const port = parseInt(process.env.PORT, 10) || 3000;
 const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
 const handle = app.getRequestHandler();
+const asyncMiddleware = require('./helpers/asyncMiddleware');
+const braintree = require('./middlewares/braintree-token');
 
 app.prepare().then(() => {
   const server = express();
   server.use(bodyParser.json());
+
+  server.get('/client-token', asyncMiddleware(braintree));
 
   server.get('*', (req, res) => handle(req, res));
 
