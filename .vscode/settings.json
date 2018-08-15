@@ -1,0 +1,14 @@
+{
+  "eslint.enable": true,
+  "editor.formatOnSave": true,
+  "flow.useNPMPackagedFlow": true,
+  "javascript.validate.enable": false,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "node_modules/": true,
+    "build/": true,
+    ".nyc_output": true,
+    "npm": true
+  }
+}
