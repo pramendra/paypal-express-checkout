@@ -17,6 +17,6 @@ module.exports = async (
     if (success) res.json({ clientToken });
     throw new Error('cant retrive token');
   } catch (error) {
-    res.send(403);
+    res.sendStatus(403);
   }
 };
