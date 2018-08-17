@@ -1,0 +1,8 @@
+{
+  "env": {
+    "ENVIRONMENT": "Sandbox",
+    "MERCHANTID": "",
+    "PUBLICKEY": "",
+    "PRIVATEKEY": ""
+  }
+}
